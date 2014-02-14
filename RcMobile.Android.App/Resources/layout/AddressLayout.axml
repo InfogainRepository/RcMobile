@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+      android:minWidth="25px"
+      android:minHeight="25px"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:id="@+id/relativeLayout1">
+  <TextView
+      android:text="Name:"
+      android:id="@+id/lblNameFirst"
+      android:textAppearance="?android:attr/textAppearanceSmall"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:textColor="#A8A8A8"
+      android:paddingLeft="5dip"
+      android:paddingRight="5dip"
+      android:textSize="11dip" />
+  <TextView
+      android:text="N.F"
+      android:id="@+id/txtNameFirst"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:textColor="#33FF00"
+      android:layout_alignBaseline="@id/lblNameFirst"
+      android:layout_toRightOf="@id/lblNameFirst"
+      android:textSize="13dip" />
+  <TextView
+      android:text="Address:"
+      android:id="@+id/lblAddress"
+      android:textAppearance="?android:attr/textAppearanceSmall"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:textColor="#A8A8A8"
+      android:layout_below="@id/lblNameFirst"
+      android:paddingLeft="5dip"
+      android:paddingRight="5dip"
+      android:textSize="11dip" />
+  <TextView
+      android:text="A"
+      android:id="@+id/txtAddress"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:textColor="#33FF00"
+      android:layout_below="@id/txtNameFirst"
+      android:layout_alignBaseline="@id/lblAddress"
+      android:layout_toRightOf="@id/lblAddress"
+      android:textSize="13dip" />
+  <TextView
+      android:text="City:"
+      android:id="@+id/lblCity"
+      android:textAppearance="?android:attr/textAppearanceSmall"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:textColor="#A8A8A8"
+      android:paddingLeft="5dip"
+      android:layout_below="@id/lblAddress"
+      android:textSize="11dip" />
+  <TextView
+      android:text="C"
+      android:id="@+id/txtCity"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:paddingRight="10dip"
+      android:textColor="#FFFF00"
+      android:paddingLeft="5dip"
+      android:layout_alignBaseline="@id/lblCity"
+      android:layout_below="@id/lblAddress"
+      android:layout_toRightOf="@id/lblCity"
+      android:textSize="13dip" />
+  <TextView
+      android:text="State:"
+      android:id="@+id/lblProvinceState"
+      android:textAppearance="?android:attr/textAppearanceSmall"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:textColor="#A8A8A8"
+      android:layout_alignBaseline="@id/txtCity"
+      android:layout_below="@id/txtAddress"
+      android:layout_toRightOf="@id/txtCity"
+      android:layout_marginRight="4dip"
+      android:textSize="11dip" />
+  <TextView
+      android:text="P.S"
+      android:id="@+id/txtProvinceState"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:textColor="#FFFF00"
+      android:paddingRight="10dip"
+      android:layout_below="@id/txtAddress"
+      android:layout_alignBaseline="@id/lblProvinceState"
+      android:layout_toRightOf="@id/lblProvinceState"
+      android:textSize="13dip" />
+  <TextView
+     android:text="Zip:"
+     android:id="@+id/lblPostalCode"
+     android:textAppearance="?android:attr/textAppearanceSmall"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:textColor="#A8A8A8"
+     android:layout_alignBaseline="@id/txtProvinceState"
+     android:layout_below="@id/txtAddress"
+     android:layout_toRightOf="@id/txtProvinceState"
+     android:layout_marginRight="4dip"
+     android:textSize="11dip" />
+  <TextView
+      android:text="P.C"
+      android:id="@+id/txtPostalCode"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:textColor="#FFFF00"
+      android:layout_below="@id/txtAddress"
+      android:layout_alignBaseline="@id/lblPostalCode"
+      android:layout_toRightOf="@id/lblPostalCode"
+      android:textSize="13dip" />
+  <TextView
+      android:text="Phone:"
+      android:id="@+id/lblPhoneHome"
+      android:textAppearance="?android:attr/textAppearanceSmall"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/lblCity"
+      android:textColor="#A8A8A8"
+      android:paddingLeft="5dip"
+      android:paddingRight="5dip"
+      android:textSize="11dip" />
+  <TextView
+      android:text="P.H"
+      android:id="@+id/txtPhoneHome"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:textColor="#33FF00"
+      android:layout_toRightOf="@id/lblPhoneHome"
+      android:layout_below="@id/txtCity"
+      android:layout_alignBaseline="@id/lblPhoneHome"
+      android:textSize="13dip" />
+  <TextView
+      android:text="E-Mail:"
+      android:id="@+id/lblEmail"
+      android:textAppearance="?android:attr/textAppearanceSmall"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/lblPhoneHome"
+      android:textColor="#A8A8A8"
+      android:paddingLeft="5dip"
+      android:paddingRight="5dip"
+      android:textSize="11dip" />
+  <TextView
+      android:text="E"
+      android:id="@+id/txtEmail"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:textColor="#33FF00"
+      android:layout_toRightOf="@id/lblEmail"
+      android:layout_below="@id/txtPhoneHome"
+      android:layout_alignBaseline="@id/lblEmail"
+      android:textSize="13dip" />
+</RelativeLayout>
+

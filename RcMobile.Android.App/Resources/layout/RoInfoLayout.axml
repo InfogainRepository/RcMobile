@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+  <RelativeLayout
+      android:minWidth="25px"
+      android:minHeight="25px"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:id="@+id/relativeLayout1">
+    <ImageView
+               android:id="@+id/imageView1"
+               android:layout_alignParentTop="true"
+               android:src="@drawable/car_icon2"
+               android:layout_width="50dip"
+               android:layout_height="60dip" />
+    <TextView
+       android:text="RO#:"
+       android:id="@+id/lblRoNumber"
+       android:textAppearance="?android:attr/textAppearanceSmall"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_toRightOf="@id/imageView1"
+       android:textColor="#A8A8A8"
+       android:paddingLeft="5dip"
+       android:textSize="11dip" />
+    <TextView
+        android:text="R.N"
+        android:id="@+id/txtRoNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFF00"
+        android:paddingLeft="5dip"
+        android:layout_alignBaseline="@id/lblRoNumber"
+        android:layout_toRightOf="@id/lblRoNumber"
+        android:textSize="13dip" />
+    <TextView
+       android:text="Arrived Date:"
+       android:id="@+id/lblArrivedDate"
+       android:textAppearance="?android:attr/textAppearanceSmall"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:textColor="#A8A8A8"
+       android:layout_below="@id/lblRoNumber"
+       android:layout_toRightOf="@id/imageView1"
+       android:paddingLeft="5dip"
+       android:textSize="11dip" />
+    <TextView
+        android:text="A.D"
+        android:id="@+id/txtArrivedDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFF00"
+        android:paddingLeft="5dip"
+        android:layout_alignBaseline="@id/lblArrivedDate"
+        android:layout_below="@id/txtRoNumber"
+        android:layout_toRightOf="@id/lblArrivedDate"
+        android:textSize="13dip" />
+  </RelativeLayout>
+  <RelativeLayout
+      android:minWidth="25px"
+      android:minHeight="25px"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:id="@+id/relativeLayout2">
+    <TextView
+        android:text="Year:"
+        android:id="@+id/lblVehicleYear"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#A8A8A8"
+        android:paddingLeft="5dip"
+        android:layout_marginRight="4dip"
+        android:textSize="11dip" />
+    <TextView
+        android:text="V.Y"
+        android:id="@+id/txtVehicleYear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingRight="10dip"
+        android:textColor="#FFFF00"
+        android:paddingLeft="5dip"
+        android:layout_alignBaseline="@id/lblVehicleYear"
+        android:layout_toRightOf="@id/lblVehicleYear"
+        android:textSize="13dip" />
+    <TextView
+        android:text="Make:"
+        android:id="@+id/lblVehicleMake"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#A8A8A8"
+        android:layout_marginRight="4dip"
+        android:layout_alignBaseline="@id/lblVehicleYear"
+        android:layout_toRightOf="@id/txtVehicleYear"
+        android:textSize="11dip" />
+    <TextView
+        android:text="V.M"
+        android:id="@+id/txtVehicleMake"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFF00"
+        android:layout_alignBaseline="@id/txtVehicleYear"
+        android:layout_toRightOf="@id/lblVehicleMake"
+        android:textSize="13dip" />
+    <TextView
+        android:text="Model:"
+        android:id="@+id/lblVehicleModel"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lblVehicleYear"
+        android:textColor="#A8A8A8"
+        android:paddingLeft="5dip"
+        android:paddingRight="5dip"
+        android:textSize="11dip" />
+    <TextView
+        android:text="V.M"
+        android:id="@+id/txtVehicleModel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#33FF00"
+        android:layout_alignBaseline="@id/lblVehicleModel"
+        android:layout_toRightOf="@id/lblVehicleModel"
+        android:layout_below="@id/txtVehicleYear"
+        android:textSize="13dip" />
+    <TextView
+        android:text="License Plate"
+        android:id="@+id/lblVehicleLicense"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#A8A8A8"
+        android:paddingLeft="5dip"
+        android:layout_marginRight="4dip"
+        android:layout_below="@id/lblVehicleModel"
+        android:textSize="11dip" />
+    <TextView
+        android:text="V.L"
+        android:id="@+id/txtVehicleLicense"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingRight="10dip"
+        android:textColor="#FFFF00"
+        android:paddingLeft="5dip"
+        android:layout_alignBaseline="@id/lblVehicleLicense"
+        android:layout_below="@id/txtVehicleModel"
+        android:layout_toRightOf="@id/lblVehicleLicense"
+        android:textSize="13dip" />
+    <TextView
+        android:text="State:"
+        android:id="@+id/lblVehicleLicenseState"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#A8A8A8"
+        android:layout_alignBaseline="@id/txtVehicleLicense"
+        android:layout_below="@id/txtVehicleModel"
+        android:layout_toRightOf="@id/txtVehicleLicense"
+        android:layout_marginRight="4dip"
+        android:textSize="11dip" />
+    <TextView
+        android:text="V.L.S"
+        android:id="@+id/txtVehicleLicenseState"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFF00"
+        android:layout_below="@id/txtVehicleModel"
+        android:layout_alignBaseline="@id/txtVehicleLicense"
+        android:layout_toRightOf="@id/lblVehicleLicenseState"
+        android:textSize="13dip" />
+    <TextView
+        android:text="VIN:"
+        android:id="@+id/lblVehicleVin"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lblVehicleLicense"
+        android:textColor="#A8A8A8"
+        android:paddingLeft="5dip"
+        android:paddingRight="5dip"
+        android:textSize="11dip" />
+    <TextView
+        android:text="V.V"
+        android:id="@+id/txtVehicleVin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#33FF00"
+        android:layout_toRightOf="@id/lblVehicleVin"
+        android:layout_below="@id/lblVehicleLicense"
+        android:layout_alignBaseline="@id/lblVehicleVin"
+        android:textSize="13dip" />
+    <TextView
+        android:text="Claim#:"
+        android:id="@+id/lblClaimNumber"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lblVehicleVin"
+        android:textColor="#A8A8A8"
+        android:paddingLeft="5dip"
+        android:paddingRight="5dip"
+        android:textSize="11dip" />
+    <TextView
+        android:text="CN"
+        android:id="@+id/txtClaimNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#33FF00"
+        android:layout_toRightOf="@id/lblClaimNumber"
+        android:layout_below="@id/txtVehicleVin"
+        android:layout_alignBaseline="@id/lblClaimNumber"
+        android:textSize="13dip" />
+    <TextView
+        android:text="Ins co.:"
+        android:id="@+id/lblInsuranceCompanyName"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lblClaimNumber"
+        android:textColor="#A8A8A8"
+        android:paddingLeft="5dip"
+        android:paddingRight="5dip"
+        android:textSize="11dip" />
+    <TextView
+        android:text="icn"
+        android:id="@+id/txtInsuranceCompanyName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#33FF00"
+        android:layout_toRightOf="@id/lblInsuranceCompanyName"
+        android:layout_below="@id/txtClaimNumber"
+        android:layout_alignBaseline="@id/lblInsuranceCompanyName"
+        android:textSize="13dip" />
+  </RelativeLayout>
+  <TabHost
+      android:id="@android:id/tabhost"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/linearLayout1" >
+    <TabWidget
+        android:id="@android:id/tabs"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+    <FrameLayout
+        android:id="@android:id/tabcontent"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:padding="5dp"
+        android:minWidth="25px"
+        android:minHeight="25px"/>
+    </LinearLayout>
+  </TabHost>
+</LinearLayout>

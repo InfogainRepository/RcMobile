@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/item_background">
+  <ImageView
+      android:id="@+id/imageView1"
+      android:layout_alignParentTop="true"
+      android:src="@drawable/caricon"
+      android:layout_width="50dip"
+      android:layout_height="60dip" />
+  <TextView
+      android:text="RO#:"
+      android:id="@+id/lblRoNumber"
+      android:textAppearance="?android:attr/textAppearanceSmall"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:textColor="#A8A8A8"
+      android:paddingLeft="5dip"
+      android:layout_marginRight="4dip"
+      android:layout_toRightOf="@id/imageView1"
+      android:textSize="11dip" />
+  <TextView
+      android:text="RoNumber"
+      android:id="@+id/txtRoNumber"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:paddingRight="20dip"
+      android:textColor="#FFFFFF"
+      android:layout_alignBaseline="@id/lblRoNumber"
+      android:layout_toRightOf="@id/lblRoNumber"
+      android:textSize="13dip" />
+  <TextView
+      android:text="VehicleYear"
+      android:id="@+id/txtVehicleYear"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:paddingRight="10dip"
+      android:textColor="#FFFF00"
+      android:layout_below="@id/lblRoNumber"
+      android:paddingLeft="5dip"
+      android:layout_toRightOf="@id/imageView1"
+      android:textSize="13dip" />
+  <TextView
+      android:text="VehicleMake"
+      android:id="@+id/txtVehicleMake"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:textColor="#FFFF00"
+      android:layout_below="@id/txtRoNumber"
+      android:layout_alignBaseline="@id/txtVehicleYear"
+      android:layout_toRightOf="@id/txtVehicleYear"
+      android:textSize="13dip" />
+  <TextView
+      android:text="Due:"
+      android:id="@+id/lblDueDate"
+      android:textAppearance="?android:attr/textAppearanceSmall"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/txtVehicleYear"
+      android:layout_toRightOf="@id/imageView1"
+      android:textColor="#A8A8A8"
+      android:paddingLeft="5dip"
+      android:paddingRight="5dip"
+      android:textSize="11dip" />
+  <TextView
+      android:text="DueOut"
+      android:id="@+id/txtDueOut"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:textColor="#33FF00"
+      android:layout_toRightOf="@id/lblDueDate"
+      android:layout_alignBaseline="@id/lblDueDate"
+      android:layout_below="@id/txtVehicleMake"
+      android:textSize="13dip" />
+  <TextView
+      android:text="License:"
+      android:id="@+id/lblLicense"
+      android:textAppearance="?android:attr/textAppearanceSmall"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:textColor="#A8A8A8"
+      android:layout_below="@id/txtVehicleMake"
+      android:paddingLeft="5dip"
+      android:textSize="11dip"
+      android:paddingRight="5dip"
+      android:layout_toRightOf="@id/txtDueOut"
+      android:layout_alignBaseline="@id/lblDueDate" />
+  <TextView
+      android:text="License"
+      android:id="@+id/txtVehicleLicense"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:paddingRight="5dip"
+      android:textColor="#33FFFF"
+      android:layout_alignBaseline="@id/lblLicense"
+      android:layout_below="@id/txtVehicleMake"
+      android:layout_toRightOf="@id/lblLicense"
+      android:textSize="13dip" />
+  <TextView
+      android:text="LicenseState"
+      android:id="@+id/txtVehicleLicenseState"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:textColor="#33FFFF"
+      android:layout_below="@id/txtVehicleLicenseState"
+      android:layout_alignBaseline="@id/lblLicense"
+      android:layout_toRightOf="@id/txtVehicleLicense"
+      android:textSize="13dip" />
+</RelativeLayout>
